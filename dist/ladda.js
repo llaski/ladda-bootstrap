@@ -1,6 +1,6 @@
 (function(root, factory) {
     if (typeof exports === "object") {
-        module.exports = factory();
+        module.exports = factory(require('./spin.js'));
     } else if (typeof define === "function" && define.amd) {
         define([ "./spin" ], factory);
     } else {
